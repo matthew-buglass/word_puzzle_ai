@@ -1,2 +1,5 @@
-# word_puzzle_ai
-An AI to solve Wordle problems
+# Can an AI Beat Your Friends at Wordle?
+
+## Libraries
+- TensorFlow
+- NumPy
