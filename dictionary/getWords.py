@@ -11,6 +11,7 @@ if page.status_code == 200:
 
     with open("dictionary.txt", "w+") as f:
         f.write(words.rstrip('\n'))
+        f.close()
 
 else:
     print("Could not access page. Code: {} for {}".format(page.status_code, url))
