@@ -12,8 +12,9 @@ def randomWord():
         words = []
 
         for line in f:
-            words.append(line.rstrip("\n"))
-            lines += 1
+			if line[0] != "<":
+				words.append(line.rstrip("\n"))
+				lines += 1
 
         idx = randint(0, lines-1)
         word = words[idx]
